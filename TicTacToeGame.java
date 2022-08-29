@@ -5,7 +5,6 @@
  * It automatically maintain the current state of
  * the game as players are making moves.
  *
- * @author Guy-Vincent Jourdan, University of Ottawa
  */
 public class TicTacToeGame {
 
@@ -430,7 +429,7 @@ public class TicTacToeGame {
 
     public void reset(){
 
-    	// YOUR CODE HERE
+    	
 			this.transformedBoard = new int[lines*columns];
 			for (int i = 0; i < lines*columns; i++) {
 				this.transformedBoard[i] = i;
@@ -448,7 +447,7 @@ public class TicTacToeGame {
      */
     public boolean hasNext(){
 
-    	// YOUR CODE HERE
+    	
 			if(this.lines == this.columns && this.countTransform == 8)return false;
 			else if(this.lines != this.columns && this.countTransform == 4 )return false;
 			return true;
@@ -461,7 +460,7 @@ public class TicTacToeGame {
      */
     public void next(){
 
-    	// YOUR CODE HERE
+    	
 			if(countTransform != 0){
 				if(this.lines == this.columns){
 					if(countTransform == 4)Utils.horizontalFlip(this.lines,this.columns,this.transformedBoard);
@@ -489,14 +488,8 @@ public class TicTacToeGame {
     *  the TicTacToeGame instance to be compared with this one
   	*/
   	public boolean equalsWithSymmetry(TicTacToeGame other){
-			/*
-			g.reset();
-			while (g.hasNext()) {
-					g.next();
-					System.out.println(g.toStringTransformed());
-			}
-			*/
-  		// YOUr CODE HERE
+			
+  		
 			if(this.lines == other.lines && this.columns == other.columns && this.gameState == other.getGameState()){
 				other.reset();
 				while(other.hasNext()){
