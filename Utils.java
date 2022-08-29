@@ -42,7 +42,7 @@ public class Utils {
 
     public static void rotate(int lines, int columns, int[] transformedBoard){
 
-            // YOUR CODE HERE
+	    
 						if(!(lines == columns))return;
 						int coin1 = 0;
 						int coin2 = columns-1;
@@ -108,7 +108,7 @@ public class Utils {
 
     public static  void horizontalFlip(int lines, int columns, int[] transformedBoard){
 
-        // YOUR CODE HERE
+
 				for(int i = 0; i < lines/2 ; i++){
 					//lines max = 3 columns max = 3
 					//lines * columns = 9
@@ -162,7 +162,7 @@ public class Utils {
 
     public static  void verticalFlip(int lines, int columns, int[] transformedBoard){
 
-        // YOUR CODE HERE
+
 				for(int i = 0; i < columns/2; i++){
 
 
